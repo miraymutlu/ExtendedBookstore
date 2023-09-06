@@ -3,9 +3,9 @@ using WebApi.Entities;
 
 namespace WebApi.UnitTests.TestSetup;
 
-public class Genres
+public static class Genres
 {
-    public static void AddGenres(BookstoreDbContext context)
+    public static void AddGenres(this BookstoreDbContext context)
     {
         context.Genres.AddRange(
             new Genre

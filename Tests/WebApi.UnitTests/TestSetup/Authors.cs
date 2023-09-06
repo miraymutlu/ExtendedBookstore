@@ -3,9 +3,9 @@ using WebApi.Entities;
 
 namespace WebApi.UnitTests.TestSetup;
 
-public class Authors
+public static class Authors
 {
-    public static void AddAuthors(BookstoreDbContext context)
+    public static void AddAuthors(this BookstoreDbContext context)
     {
         context.Authors.AddRange(
             new Author
