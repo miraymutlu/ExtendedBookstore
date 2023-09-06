@@ -38,4 +38,21 @@ public class CreateBookCommandTests : IClassFixture<CommonTestFixture>
         FluentActions.Invoking(() => command.Handle()).Should().Throw<InvalidOperationException>().And.Message.Should()
             .Be("The book is already exists.");
     }
+
+    [Fact]
+    public void WhenValidInputsAreGiven_Book_ShouldBeCreated()
+    {
+        WebApi.BookOperations.CreateBook.CreateBookCommand command = new WebApi.BookOperations.CreateBook.CreateBookCommand(_context, _mapper);
+        WebApi.BookOperations.CreateBook.CreateBookCommand.CreateBookModel model =
+            new WebApi.BookOperations.CreateBook.CreateBookCommand.CreateBookModel(){Title = "Lord Of The Rings" , PageCount = 1300, PublishDate = DateTime.Now.Date.AddYears(-10), GenreId = 3 };;
+        command.Model = model;
+        
+        FluentActions.Invoking(() => command.Handle()).Invoke();
+
+        var book = _context.Books.SingleOrDefault(book => book.Title == model.Title);
+        book.Should().NotBeNull();
+        book.PageCount.Should().Be(model.PageCount);
+        book.PublishDate.Should().Be(model.PublishDate);
+        book.GenreId.Should().Be(model.GenreId);
+    }
 }
