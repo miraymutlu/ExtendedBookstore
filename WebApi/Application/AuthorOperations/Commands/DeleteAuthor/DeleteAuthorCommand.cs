@@ -6,9 +6,9 @@ public class DeleteAuthorCommand
 {
     public int Id { get; set; }
 
-    private readonly BookstoreDbContext _context;
+    private readonly IBookStoreDbContext _context;
 
-    public DeleteAuthorCommand(BookstoreDbContext context)
+    public DeleteAuthorCommand(IBookStoreDbContext context)
     {
         _context = context;
     }

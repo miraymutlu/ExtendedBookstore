@@ -8,10 +8,10 @@ public class CreateBookCommand
 {
     public CreateBookModel Model { get; set; }
 
-    private readonly BookstoreDbContext _dbContext;
+    private readonly IBookStoreDbContext _dbContext;
     private readonly IMapper _mapper;
 
-    public CreateBookCommand(BookstoreDbContext dbContext, IMapper mapper)
+    public CreateBookCommand(IBookStoreDbContext dbContext, IMapper mapper)
     {
         _dbContext = dbContext;
         _mapper = mapper;

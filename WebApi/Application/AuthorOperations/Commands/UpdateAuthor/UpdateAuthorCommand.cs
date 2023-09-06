@@ -6,9 +6,9 @@ public class UpdateAuthorCommand
 {
     public int Id { get; set; }
     public UpdateAuthorViewModel Model { get; set; }
-    private readonly BookstoreDbContext _context;
+    private readonly IBookStoreDbContext _context;
 
-    public UpdateAuthorCommand(BookstoreDbContext context)
+    public UpdateAuthorCommand(IBookStoreDbContext context)
     {
         _context = context;
     }

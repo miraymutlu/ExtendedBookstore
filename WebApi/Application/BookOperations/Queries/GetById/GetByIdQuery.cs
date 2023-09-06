@@ -9,11 +9,11 @@ namespace WebApi.BookOperations.GetById;
 
 public class GetByIdQuery
 {
-    private readonly BookstoreDbContext _dbContext;
+    private readonly IBookStoreDbContext _dbContext;
     private readonly IMapper _mapper;
     public int BookID { get; set; }
 
-    public GetByIdQuery(BookstoreDbContext dbContext, IMapper mapper)
+    public GetByIdQuery(IBookStoreDbContext dbContext, IMapper mapper)
     {
         _dbContext = dbContext;
         _mapper = mapper;

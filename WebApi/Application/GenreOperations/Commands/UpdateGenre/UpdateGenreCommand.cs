@@ -8,9 +8,9 @@ public class UpdateGenreCommand
     public int GenreId { get; set; }
     public UpdateGenreModel Model { get; set; }
     
-    private readonly BookstoreDbContext _context;
+    private readonly IBookStoreDbContext _context;
 
-    public UpdateGenreCommand(BookstoreDbContext context)
+    public UpdateGenreCommand(IBookStoreDbContext context)
     {
         _context = context;
     }

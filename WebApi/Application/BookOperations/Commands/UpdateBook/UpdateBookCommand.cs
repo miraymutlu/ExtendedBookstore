@@ -7,9 +7,9 @@ public class UpdateBookCommand
     public UpdateBookModel Model { get; set; }
     public int BookId { get; set; }
     
-    private readonly BookstoreDbContext _dbContext;
+    private readonly IBookStoreDbContext _dbContext;
 
-    public UpdateBookCommand(BookstoreDbContext dbContext)
+    public UpdateBookCommand(IBookStoreDbContext dbContext)
     {
         _dbContext = dbContext;
     }

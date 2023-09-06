@@ -6,9 +6,9 @@ public class DeleteGenreCommand
 {
     public int GenreId { get; set; }
 
-    private readonly BookstoreDbContext _context;
+    private readonly IBookStoreDbContext _context;
 
-    public DeleteGenreCommand(BookstoreDbContext context)
+    public DeleteGenreCommand(IBookStoreDbContext context)
     {
         _context = context;
     }

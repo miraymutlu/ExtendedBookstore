@@ -5,11 +5,11 @@ namespace WebApi.Application.AuthorOperations.Queries.GetAuthorsById;
 
 public class GetAuthorsByIdQuery
 {
-    private readonly BookstoreDbContext _context;
+    private readonly IBookStoreDbContext _context;
     private readonly IMapper _mapper;
     public int Id { get; set; }
 
-    public GetAuthorsByIdQuery(BookstoreDbContext context, IMapper mapper)
+    public GetAuthorsByIdQuery(IBookStoreDbContext context, IMapper mapper)
     {
         _context = context;
         _mapper = mapper;
