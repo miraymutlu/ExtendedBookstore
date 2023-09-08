@@ -8,18 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="666488b6-e889-4961-9db8-be19a136de5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Tests/WebApi.UnitTests/Application/AuthorOperations/Commands/CreateAuthorCommand/CreateAuthorCommandTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/WebApi.UnitTests/Application/AuthorOperations/Commands/CreateAuthorCommand/CreateAuthorCommandValidatorTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BookstoreSln/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BookstoreSln/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookstoreSln.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/BookstoreSln.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/WebApi.UnitTests/WebApi.UnitTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/WebApi.UnitTests/WebApi.UnitTests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/WebApi.UnitTests/bin/Debug/net6.0/WebApi.UnitTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/WebApi.UnitTests/bin/Debug/net6.0/WebApi.UnitTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/WebApi.UnitTests/bin/Debug/net6.0/WebApi.UnitTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/WebApi.UnitTests/bin/Debug/net6.0/WebApi.UnitTests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/WebApi.UnitTests/obj/Debug/net6.0/WebApi.UnitTests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/WebApi.UnitTests/obj/Debug/net6.0/WebApi.UnitTests.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/WebApi.UnitTests/obj/Debug/net6.0/WebApi.UnitTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/WebApi.UnitTests/obj/Debug/net6.0/WebApi.UnitTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/WebApi.UnitTests/obj/Debug/net6.0/WebApi.UnitTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/WebApi.UnitTests/obj/Debug/net6.0/WebApi.UnitTests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/WebApi.UnitTests/obj/Debug/net6.0/ref/WebApi.UnitTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/WebApi.UnitTests/obj/Debug/net6.0/ref/WebApi.UnitTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/WebApi.UnitTests/obj/Debug/net6.0/refint/WebApi.UnitTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/WebApi.UnitTests/obj/Debug/net6.0/refint/WebApi.UnitTests.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/WebApi.UnitTests/Application/AuthorOperations/Commands/UpdateAuthorCommand/UpdateAuthorCommandValidatorTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +125,7 @@
       <workItem from="1694003695361" duration="994000" />
       <workItem from="1694005067920" duration="5927000" />
       <workItem from="1694162115539" duration="271000" />
-      <workItem from="1694171867203" duration="7375000" />
+      <workItem from="1694171867203" duration="7909000" />
     </task>
     <servers />
   </component>
