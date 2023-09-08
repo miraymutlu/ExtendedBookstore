@@ -21,6 +21,7 @@
     &lt;TestId&gt;xUnit::8FCB57B3-74D8-462D-A1BA-8C9735F2E644::net6.0::WebApi.UnitTests.Application.AuthorOperations.Commands.UpdateAuthorCommand.UpdateAuthorCommandValidatorTests&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::8FCB57B3-74D8-462D-A1BA-8C9735F2E644::net6.0::WebApi.UnitTests.Application.AuthorOperations.Commands.DeleteAuthorCommand.DeleteAuthorCommandTests&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::8FCB57B3-74D8-462D-A1BA-8C9735F2E644::net6.0::WebApi.UnitTests.Application.AuthorOperations.Commands.DeleteAuthorCommand.DeleteAuthorCommandValidatorTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::8FCB57B3-74D8-462D-A1BA-8C9735F2E644::net6.0::WebApi.UnitTests.Application.AuthorOperations.Queries.GetAuthors.GetAuthorsQueryTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	</wpf:ResourceDictionary>
