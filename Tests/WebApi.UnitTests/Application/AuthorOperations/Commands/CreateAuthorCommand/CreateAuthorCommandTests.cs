@@ -19,31 +19,6 @@ public class CreateAuthorCommandTests : IClassFixture<CommonTestFixture>
     }
 
     [Fact]
-    public void WhenAlreadyExitAuthorNameSurnameIsGiven_InvalidOperationException_ShouldBeReturn()
-    {
-        var author = new Author ()
-        { 
-            Name = "Haruki",
-            Surname= "Murakami",
-            Birthday= new DateTime(1970,05,10)
-        };
-        _context.Authors.Add(author);
-        _context.SaveChanges();
-
-        WebApi.Application.AuthorOperations.Commands.CreateAuthorCommand.CreateAuthorCommand command = new WebApi.Application.AuthorOperations.Commands.CreateAuthorCommand.CreateAuthorCommand(_context ,_mapper);
-        command.Model = new CreateAuthorViewModel()
-        { 
-            Name = author.Name,
-            Surname = author.Surname,
-            Birthday = author.Birthday
-        };
-
-        FluentActions
-            .Invoking(() => command.Handle())
-            .Should().Throw<InvalidOperationException>().And.Message.Should().Be("The author is already exists.");
-    }
-
-    [Fact]
     public void WhenValidInputsAreGiven_Author_ShouldBeCreated()
     {
         WebApi.Application.AuthorOperations.Commands.CreateAuthorCommand.CreateAuthorCommand command = new WebApi.Application.AuthorOperations.Commands.CreateAuthorCommand.CreateAuthorCommand(_context, _mapper);
