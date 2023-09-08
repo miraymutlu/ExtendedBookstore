@@ -8,7 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="666488b6-e889-4961-9db8-be19a136de5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Tests/WebApi.UnitTests/Application/GenreOperations/Commands/UpdateGenreCommand/UpdateGenreCommandValidatorTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/WebApi.UnitTests/Application/GenreOperations/Commands/DeleteGenreCommand/DeleteGenreCommandValidatorTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +125,7 @@
       <workItem from="1694003695361" duration="994000" />
       <workItem from="1694005067920" duration="5927000" />
       <workItem from="1694162115539" duration="271000" />
-      <workItem from="1694171867203" duration="5513000" />
+      <workItem from="1694171867203" duration="5939000" />
     </task>
     <servers />
   </component>
