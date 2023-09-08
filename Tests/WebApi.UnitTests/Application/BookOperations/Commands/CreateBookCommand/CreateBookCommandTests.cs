@@ -44,7 +44,7 @@ public class CreateBookCommandTests : IClassFixture<CommonTestFixture>
     {
         WebApi.BookOperations.CreateBook.CreateBookCommand command = new WebApi.BookOperations.CreateBook.CreateBookCommand(_context, _mapper);
         WebApi.BookOperations.CreateBook.CreateBookCommand.CreateBookModel model =
-            new WebApi.BookOperations.CreateBook.CreateBookCommand.CreateBookModel(){Title = "Lord Of The Rings" , PageCount = 1300, PublishDate = DateTime.Now.Date.AddYears(-10), GenreId = 3 };;
+            new WebApi.BookOperations.CreateBook.CreateBookCommand.CreateBookModel(){Title = "Lord Of The Rings" , PageCount = 1300, PublishDate = DateTime.Now.Date.AddYears(-10), GenreId = 3 };
         command.Model = model;
         
         FluentActions.Invoking(() => command.Handle()).Invoke();
