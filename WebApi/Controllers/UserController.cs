@@ -1,6 +1,8 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using WebApi.Application.TokenOperations.Models;
+using WebApi.Application.UserOperations.Commands.CreateTokenCommand;
 using WebApi.Application.UserOperations.Commands.CreateUserCommand;
 using WebApi.DBOperations;
 

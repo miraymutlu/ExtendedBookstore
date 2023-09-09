@@ -3,6 +3,7 @@ using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using WebApi.Application.TokenOperations.Models;
 using WebApi.Entities;
+using Microsoft.Extensions.Configuration;
 
 namespace WebApi.Application.TokenOperations;
 

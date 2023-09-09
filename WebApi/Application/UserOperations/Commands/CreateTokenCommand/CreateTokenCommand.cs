@@ -1,5 +1,6 @@
 using AutoMapper;
-using Microsoft.IdentityModel.Tokens;
+using WebApi.Application.TokenOperations;
+using WebApi.Application.TokenOperations.Models;
 using WebApi.DBOperations;
 
 namespace WebApi.Application.UserOperations.Commands.CreateTokenCommand;
@@ -24,7 +25,7 @@ public class CreateTokenCommand
         if (user is not null)
         {
             // Create Token
-            TokenHandler tokenHandler = new(_configuration);
+            TokenHandler tokenHandler = new TokenHandler(_configuration);
             Token token = tokenHandler.CreateAccessToken(user);
 
             user.RefreshToken = token.RefreshToken;
