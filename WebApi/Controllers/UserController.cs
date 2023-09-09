@@ -32,10 +32,10 @@ public class UserController : ControllerBase
         return Ok();
     }
 
-    [HttpPost]
-    public ActionResult<Token> CreateToken([FromBody] login)
+    [HttpPost("connect/token")]
+    public ActionResult<Token> CreateToken([FromBody] CreateTokenCommand.CreateTokenModel login)
     {
-        CreateTokenCommand command = new CreateTokenCommand(_context, _mapper);,
+        CreateTokenCommand command = new CreateTokenCommand(_context, _mapper, _configuration);
         command.Model = login;
         var token = command.Handle();
         return token;
