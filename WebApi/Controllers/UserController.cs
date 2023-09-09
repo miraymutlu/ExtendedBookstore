@@ -1,5 +1,7 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using WebApi.Application.UserOperations.Commands.CreateUserCommand;
 using WebApi.DBOperations;
 
 namespace WebApi.Controllers;
@@ -19,12 +21,21 @@ public class UserController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult Create([FromBody] CreateUserModel newUser)
+    public IActionResult Create([FromBody] CreateUserCommand.CreateUserModel newUser)
     {
         CreateUserCommand command = new CreateUserCommand(_context, _mapper);
         command.Model = newUser;
         command.Handle();
 
         return Ok();
+    }
+
+    [HttpPost]
+    public ActionResult<Token> CreateToken([FromBody] login)
+    {
+        CreateTokenCommand command = new CreateTokenCommand(_context, _mapper);,
+        command.Model = login;
+        var token = command.Handle();
+        return token;
     }
 }

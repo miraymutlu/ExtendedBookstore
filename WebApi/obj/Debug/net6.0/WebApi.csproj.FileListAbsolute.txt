@@ -40,3 +40,10 @@
 /Users/miraymutlu/Desktop/repos/Bookstore/WebApi/obj/Debug/net6.0/WebApi.pdb
 /Users/miraymutlu/Desktop/repos/Bookstore/WebApi/obj/Debug/net6.0/WebApi.genruntimeconfig.cache
 /Users/miraymutlu/Desktop/repos/Bookstore/WebApi/obj/Debug/net6.0/ref/WebApi.dll
+/Users/miraymutlu/Desktop/repos/Bookstore/WebApi/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/miraymutlu/Desktop/repos/Bookstore/WebApi/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/miraymutlu/Desktop/repos/Bookstore/WebApi/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/Users/miraymutlu/Desktop/repos/Bookstore/WebApi/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/Users/miraymutlu/Desktop/repos/Bookstore/WebApi/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/miraymutlu/Desktop/repos/Bookstore/WebApi/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/Users/miraymutlu/Desktop/repos/Bookstore/WebApi/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
