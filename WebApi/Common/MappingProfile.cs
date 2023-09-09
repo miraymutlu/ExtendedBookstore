@@ -4,6 +4,7 @@ using WebApi.Application.AuthorOperations.Queries;
 using WebApi.Application.AuthorOperations.Queries.GetAuthorsById;
 using WebApi.Application.GenreOperations.Queries.GetGenres;
 using WebApi.Application.GenreOperations.Queries.GetGenresById;
+using WebApi.Application.UserOperations.Commands.CreateUserCommand;
 using WebApi.BookOperations.GetBooks;
 using WebApi.BookOperations.GetById;
 using WebApi.Entities;
@@ -25,5 +26,6 @@ public class MappingProfile : Profile
         CreateMap<CreateAuthorViewModel, Author>();
         CreateMap<Author, AuthorsViewModel>();
         CreateMap<Author, GetAuthorsByIdViewModel>();
+        CreateMap<CreateUserCommand.CreateUserModel, User>();
     }
 }
